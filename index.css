@@ -1,1 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #567ed4;
+  color: white;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.card {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.good { background-color: green; }
+.delay { background-color: orange; }
+.suspended { background-color: red; }
+
 

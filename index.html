@@ -6,33 +6,49 @@
     <title>API Full Stack Project</title>
   </head>
   <body>
-    <h1>Mta Transit App</h1>
-
     
-    <section>  
-       <h2>Line Status</h2>
-      <div id="line-status-container"></div>
+
+     <header>
+        <h1>NYC Transit Tracker</h1>
+        <p>Real-time subway & bus updates</p>
+    </header>
+
+    <!-- Line Status Dashboard -->
+    <section id="line-status">
+        <h2>Line Status</h2>
+        <div id="line-container">
+            <!-- Dynamic subway line cards go here -->
+        </div>
     </section>
 
-    
-    <section>
-      <h2>Check Arrivals</h2>
-      <input type="text" id="station-input" placeholder="Enter station name">
-      <button id="search-btn">Search</button>
-      <div id="arrival-results"></div>
+    <!-- Real-Time Arrivals -->
+    <section id="arrivals">
+        <h2>Check Arrivals</h2>
+        <input type="text" id="station-input" placeholder="Enter station name or stop ID">
+        <button id="search-btn">Search</button>
 
-    </section>
- 
-    <section>
-     <h2>Service Alerts</h2>
-     <div id="alerts-container"></div>
+        <div id="arrival-results">
+            <!-- Arrival times will show here -->
+        </div>
     </section>
 
-      
-  <section>
-    <h2>Saved Routes</h2>
-    <div id="saved-container"></div>
-  </section>
+    <!-- Service Alerts -->
+    <section id="alerts">
+        <h2>Service Alerts</h2>
+        <div id="alerts-container">
+            <!-- Alerts will go here -->
+        </div>
+    </section>
+
+    <!-- Favorites -->
+    <section id="favorites">
+        <h2>Favorites</h2>
+        <div id="favorites-container">
+            <!-- Saved stops -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 
     
     
