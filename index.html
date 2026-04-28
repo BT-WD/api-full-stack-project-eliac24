@@ -1,56 +1,45 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API Full Stack Project</title>
-  </head>
-  <body>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Transit Tracker</title>
 
-     <header>
-        <h1>NYC Transit Tracker</h1>
-        <p>Real-time subway & bus updates</p>
-    </header>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!-- Line Status Dashboard -->
-    <section id="line-status">
-        <h2>Line Status</h2>
-        <div id="line-container">
-            <!-- Dynamic subway line cards go here -->
-        </div>
-    </section>
+<header>
+    <h1>NYC Transit Tracker</h1>
+    <p>Real-time subway & bus updates</p>
+</header>
 
-    <!-- Real-Time Arrivals -->
-    <section id="arrivals">
-        <h2>Check Arrivals</h2>
-        <input type="text" id="station-input" placeholder="Enter station name or stop ID">
-        <button id="search-btn">Search</button>
+<section id="line-status">
+    <h2>Line Status</h2>
+    <div id="line-container"></div>
+</section>
 
-        <div id="arrival-results">
-            <!-- Arrival times will show here -->
-        </div>
-    </section>
+<section id="arrivals">
+    <h2>Check Arrivals</h2>
+    <input type="text" id="station-input" placeholder="Enter station name or stop ID">
+    <button id="search-btn">Search</button>
 
-    <!-- Service Alerts -->
-    <section id="alerts">
-        <h2>Service Alerts</h2>
-        <div id="alerts-container">
-            <!-- Alerts will go here -->
-        </div>
-    </section>
+    <div id="arrival-results"></div>
+</section>
 
-    <!-- Favorites -->
-    <section id="favorites">
-        <h2>Favorites</h2>
-        <div id="favorites-container">
-            <!-- Saved stops -->
-        </div>
-    </section>
+<section id="alerts">
+    <h2>Service Alerts</h2>
+    <div id="alerts-container"></div>
+</section>
 
-    <script src="script.js"></script>
+<section id="favorites">
+    <h2>Favorites</h2>
+    <div id="favorites-container"></div>
+</section>
 
-    
+<!-- LINK JS -->
+<script src="script.js"></script>
     
 
   </body>
