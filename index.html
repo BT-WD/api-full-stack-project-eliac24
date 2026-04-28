@@ -1,46 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYC Transit Tracker</title>
-
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Transit Tracker</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<header>
+  <header>
     <h1>NYC Transit Tracker</h1>
-    <p>Real-time subway & bus updates</p>
-</header>
+    <p>Real-time subway &amp; bus updates</p>
+  </header>
 
-<section id="line-status">
+  <section id="line-status">
     <h2>Line Status</h2>
     <div id="line-container"></div>
-</section>
+  </section>
 
-<section id="arrivals">
+  <section id="arrivals">
     <h2>Check Arrivals</h2>
-    <input type="text" id="station-input" placeholder="Enter station name or stop ID">
-    <button id="search-btn">Search</button>
-
+    <div class="search-row">
+      <input type="text" id="station-input" placeholder="e.g. Times Sq, Canal St…">
+      <button id="search-btn">Search</button>
+    </div>
     <div id="arrival-results"></div>
-</section>
+  </section>
 
-<section id="alerts">
+  <section id="alerts">
     <h2>Service Alerts</h2>
     <div id="alerts-container"></div>
-</section>
+  </section>
 
-<section id="favorites">
+  <section id="favorites">
     <h2>Favorites</h2>
     <div id="favorites-container"></div>
-</section>
+  </section>
 
-<!-- LINK JS -->
-<script src="script.js"></script>
-    
+  <div id="toast"></div>
 
-  </body>
+  <script src="index.js"></script>
+</body>
 </html>
